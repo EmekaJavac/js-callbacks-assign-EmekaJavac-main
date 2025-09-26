@@ -13,7 +13,7 @@ function callbackChain(userId, initialData = {}, ...callbacks) {
     callbacks.forEach((callback, index) => {
       
       // Add " console.log(`After callback #${index + 1}:`, result);  "
-      result = callback(userObj);
+      result = callback(result);
       console.log("After callback #${index + 1}:" , result);
     });
 
