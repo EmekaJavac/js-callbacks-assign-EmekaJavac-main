@@ -16,7 +16,7 @@ function callbackChain(userId, initialData = {}, ...callbacks) {
       result = callback(userObj);
       console.log("After callback #${index + 1}:" , result);
     });
-    
+
     console.log("Final result:", result);
   }, 500);
   
